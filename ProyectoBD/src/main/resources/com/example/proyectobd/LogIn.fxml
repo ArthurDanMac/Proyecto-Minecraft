@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="367.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectobd.LogIn">
+   <children>
+      <ImageView fitHeight="385.0" fitWidth="821.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/img7.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#333333" height="33.0" layoutX="53.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#333333" height="355.0" layoutX="302.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="441.0" />
+      <Label layoutX="353.0" layoutY="9.0" text="LOG IN" textFill="WHITE">
+         <font>
+            <Font name="Minecraft" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="60.0" text="Escribe tu Correo Electrónico" textFill="WHITE">
+         <font>
+            <Font name="Minecraft" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="294.0" layoutY="166.0" text="Escribe tu  contraseña" textFill="WHITE">
+         <font>
+            <Font name="Minecraft" size="22.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="TF_ContraUsuLog" layoutX="294.0" layoutY="210.0" prefHeight="35.0" prefWidth="322.0">
+         <font>
+            <Font name="Minecraft" size="17.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="TF_NombreUsuLog" layoutX="294.0" layoutY="96.0" prefHeight="35.0" prefWidth="322.0">
+         <font>
+            <Font name="Minecraft" size="17.0" />
+         </font>
+      </TextField>
+      <Button fx:id="B_LogIn" layoutX="691.0" layoutY="320.0" mnemonicParsing="false" onAction="#ON_BBLogin" text="Log In">
+         <font>
+            <Font name="Minecraft" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_Back" layoutX="24.0" layoutY="320.0" mnemonicParsing="false" onAction="#ON_BBack" text="Back">
+         <font>
+            <Font name="Minecraft" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

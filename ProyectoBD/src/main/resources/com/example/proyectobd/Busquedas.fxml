@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectobd.Busquedas">
+   <children>
+      <ImageView fitHeight="461.0" fitWidth="678.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/buscar.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="199.0" layoutY="26.0" text="BUSQUEDA COMPLETADA" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="B_Regresar" layoutX="308.0" layoutY="330.0" mnemonicParsing="false" onAction="#ON_Regresar" text="Regresar">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TableView fx:id="TB_Precio" layoutX="102.0" layoutY="85.0" prefHeight="225.0" prefWidth="458.0" visible="false">
+        <columns>
+          <TableColumn fx:id="COL_CategroriaPrecios" prefWidth="118.0" text="Categoria Producto" />
+          <TableColumn fx:id="COL_PrecioPrecios" prefWidth="72.0" text="Precio" />
+            <TableColumn fx:id="COL_AldeanoPrecios" prefWidth="139.0" text="Nombre del Aldeano" />
+            <TableColumn fx:id="COL_RegionPrecios" prefWidth="128.0" text="Nombre de la Region" />
+        </columns>
+      </TableView>
+      <TableView fx:id="TB_Herramientas" layoutX="32.0" layoutY="85.0" prefHeight="225.0" prefWidth="604.0" visible="false">
+        <columns>
+          <TableColumn fx:id="COL_TipoHerr" prefWidth="132.0" text="Tipo de Herramienta" />
+          <TableColumn fx:id="COL_ComponenteHerr" prefWidth="85.0" text="Componente" />
+            <TableColumn fx:id="COL_CategoriaHerr" prefWidth="77.0" text="Categoria" />
+            <TableColumn fx:id="COL_PrecioHerr" prefWidth="58.0" text="Precio" />
+            <TableColumn fx:id="COL_AldeanoHerr" prefWidth="122.0" text="Nombre del Aldeano" />
+            <TableColumn fx:id="COL_RegionHerr" prefWidth="128.0" text="Nombre de la Region" />
+        </columns>
+      </TableView>
+      <TableView fx:id="TB_Materiales" layoutX="92.0" layoutY="85.0" prefHeight="225.0" prefWidth="483.0" visible="false">
+        <columns>
+          <TableColumn fx:id="COL_TipoMaterial" prefWidth="100.0" text="Tipo de Material" />
+          <TableColumn fx:id="COL_CategoriaMats" prefWidth="70.0" text="Categoria" />
+            <TableColumn fx:id="COL_PrecioMats" prefWidth="61.0" text="Precio" />
+            <TableColumn fx:id="COL_ALdeanoMats" prefWidth="120.0" text="Nombre de Aldeano" />
+            <TableColumn fx:id="COL_RegionMats" prefWidth="129.0" text="Nombre de la Region" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

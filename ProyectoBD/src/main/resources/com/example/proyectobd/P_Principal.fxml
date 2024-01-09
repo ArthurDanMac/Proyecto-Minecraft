@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="430.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectobd.P_Principal">
+   <children>
+      <ImageView fx:id="IMG_Fondo" fitHeight="441.0" fitWidth="810.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/Portada.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="B_login" defaultButton="true" layoutX="228.0" layoutY="184.0" mnemonicParsing="false" onAction="#ON_logIn" prefHeight="29.0" prefWidth="322.0" style="-fx-background-color: grey;" text="Iniciar Sesión" textFill="WHITE">
+         <font>
+            <Font name="Minecraft" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_Register" layoutX="228.0" layoutY="226.0" mnemonicParsing="false" onAction="#ON_Register" prefHeight="29.0" prefWidth="322.0" style="-fx-background-color: grey;" text="Registrarse" textFill="WHITE">
+         <font>
+            <Font name="Minecraft" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_Jugadores" layoutX="228.0" layoutY="330.0" mnemonicParsing="false" onAction="#ON_Jugadores" prefHeight="30.0" prefWidth="157.0" style="-fx-background-color: grey;" text="Jugadores" textFill="#f5f5f5">
+         <font>
+            <Font name="Minecraft" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_Quite" layoutX="394.0" layoutY="330.0" mnemonicParsing="false" onAction="#On_Quit" prefHeight="30.0" prefWidth="157.0" style="-fx-background-color: grey;" text="Cerrar" textFill="#f5f5f5">
+         <font>
+            <Font name="Minecraft" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_MatsHerr" layoutX="187.0" layoutY="329.0" mnemonicParsing="false" onAction="#ON_MatsHerr" opacity="0.0" prefHeight="35.0" prefWidth="33.0" />
+   </children>
+</AnchorPane>

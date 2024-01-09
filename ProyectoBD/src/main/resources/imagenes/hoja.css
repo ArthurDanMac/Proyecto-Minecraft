@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "Minecraft";
+    src: url("https://fontsforyou.com/fonts/m/Minecraft.ttf");
+}
+.your-style {
+    font-family: "Minecraft";
+}

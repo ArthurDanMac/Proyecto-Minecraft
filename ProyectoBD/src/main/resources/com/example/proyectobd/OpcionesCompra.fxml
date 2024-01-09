@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="361.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectobd.OpcionesCompra">
+   <children>
+      <ImageView fitHeight="372.0" fitWidth="741.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/aldeaCompra.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="116.0" text="Buscar o Comprar por Región" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="B_Seleccion" layoutX="476.0" layoutY="242.0" mnemonicParsing="false" onAction="#ON_Seleccion" text="Seleccionar una Región">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_Busqueda" layoutX="98.0" layoutY="242.0" mnemonicParsing="false" onAction="#ON_Busqueda" text="Por Búsqueda">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="CB_Precios" disable="true" layoutX="296.0" layoutY="190.0" prefWidth="150.0" visible="false" />
+      <TextField fx:id="TF_MatBuscar" disable="true" layoutX="63.0" layoutY="159.0" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TF_HerrBuscar" disable="true" layoutX="485.0" layoutY="165.0" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <RadioButton fx:id="RB_MatBuscar" layoutX="34.0" layoutY="115.0" mnemonicParsing="false" onAction="#ON_RB_Mat" style="-fx-background-color: white;" text="Escribe el nombre del Material que Búscas" visible="false" />
+      <RadioButton fx:id="RB_Precio" layoutX="301.0" layoutY="157.0" mnemonicParsing="false" onAction="#ON_RB_Prec" style="-fx-background-color: white;" text="Elige el Precio Mínimo" visible="false" />
+      <RadioButton fx:id="RB_HerrBuscar" layoutX="452.0" layoutY="115.0" mnemonicParsing="false" onAction="#ON_RB_Herr" style="-fx-background-color: white;" text="Escribe el nombre de la Herramienta que Búscas" visible="false" />
+      <ImageView fx:id="IMG_Buscar" fitHeight="150.0" fitWidth="200.0" layoutX="86.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/telescopio.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="IMG_Region" fitHeight="150.0" fitWidth="200.0" layoutX="500.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/mundo.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="B_Cancelar" layoutX="224.0" layoutY="309.0" mnemonicParsing="false" onAction="#ON_Cancelar" text="Cancelar" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_Buscar" disable="true" layoutX="397.0" layoutY="309.0" mnemonicParsing="false" onAction="#ON_Buscar" text="Buscar" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectobd.MaterialesHerramientas">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="754.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/selectR.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="TB_Herramientas" layoutX="48.0" layoutY="112.0" prefHeight="273.0" prefWidth="347.0" visible="false">
+        <columns>
+          <TableColumn fx:id="COL_TipoHerramienta" prefWidth="127.0" text="Tipo de Herramienta" />
+          <TableColumn fx:id="COL_ComponenteH" prefWidth="81.0" text="Componente" />
+            <TableColumn fx:id="COL_PrecioH" prefWidth="56.0" text="Precio" />
+            <TableColumn fx:id="COL_CategoriaH" prefWidth="76.0" text="Categoria" />
+        </columns>
+      </TableView>
+      <TableView fx:id="TB_Materiales" layoutX="418.0" layoutY="112.0" prefHeight="273.0" prefWidth="257.0" visible="false">
+        <columns>
+          <TableColumn fx:id="COL_TipoMaterial" prefWidth="103.0" text="Tipo de Material" />
+          <TableColumn fx:id="COL_PrecioM" prefWidth="76.0" text="Precio" />
+            <TableColumn fx:id="COL_CategoriaM" prefWidth="76.0" text="Categoria" />
+        </columns>
+      </TableView>
+      <Button fx:id="B_Regresar" layoutX="222.0" layoutY="396.0" mnemonicParsing="false" onAction="#ON_Regresar" prefHeight="25.0" prefWidth="99.0" text="Regresar" />
+      <Button fx:id="B_Cambiar" layoutX="437.0" layoutY="396.0" mnemonicParsing="false" onAction="#ON_Cambiar" prefHeight="25.0" prefWidth="99.0" text="Cambiar" />
+      <TableView fx:id="TB_Aldeanos" layoutX="373.0" layoutY="112.0" prefHeight="273.0" prefWidth="347.0">
+        <columns>
+          <TableColumn fx:id="COL_NombreAldeanoA" prefWidth="124.0" text="Nombre de Aldeano" />
+          <TableColumn fx:id="COL_CantidadA" prefWidth="71.0" text="Cantidad" />
+            <TableColumn fx:id="COL_PrecioA" prefWidth="56.0" text="Precio" />
+            <TableColumn fx:id="COL_CategoriaA" prefWidth="108.0" text="Categoria" />
+        </columns>
+      </TableView>
+      <TableView fx:id="TB_AldeanoRegion" layoutX="26.0" layoutY="112.0" prefHeight="273.0" prefWidth="330.0">
+        <columns>
+          <TableColumn fx:id="COL_nombreAR" prefWidth="131.0" text="Nombre de Aldeano" />
+          <TableColumn fx:id="COL_salarioAR" prefWidth="60.0" text="Salario" />
+            <TableColumn fx:id="COL_nombreRegAR" prefWidth="138.0" text="Nombre de la Region" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

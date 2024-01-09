@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="539.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectobd.Controlador">
+   <children>
+      <ImageView fitHeight="578.0" fitWidth="977.0" layoutX="-18.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/nether.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="B_Izq" layoutX="7.0" layoutY="284.0" mnemonicParsing="false" onAction="#ON_BIzq" prefHeight="50.0" prefWidth="52.0" text="&lt;">
+         <font>
+            <Font name="Minecraft" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_Der" layoutX="893.0" layoutY="283.0" mnemonicParsing="false" onAction="#ON_BDer" prefHeight="50.0" prefWidth="52.0" text="&gt;">
+         <font>
+            <Font name="Minecraft" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_Perfil" layoutX="23.0" layoutY="16.0" mnemonicParsing="false" onAction="#ON_BPerfil" text="Ver Perfil">
+         <font>
+            <Font name="Minecraft" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="IMG_aldeano" fitHeight="242.0" fitWidth="150.0" layoutX="445.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/aldeano_nether.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="364.0" layoutX="91.0" layoutY="161.0" opacity="0.47" stroke="BLACK" strokeType="INSIDE" width="805.0" />
+      <ImageView fitHeight="435.0" fitWidth="829.0" layoutX="62.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/villas.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="131.0" layoutY="101.0" prefHeight="49.0" prefWidth="163.0" text="NETHER">
+         <font>
+            <Font name="Minecraft" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="80.0" fitWidth="47.0" layoutX="68.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/netherrack.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="618.0" layoutY="15.0" prefHeight="44.0" prefWidth="150.0" text="Nombre:" textFill="WHITE">
+         <font>
+            <Font name="Minecraft" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="639.0" layoutY="52.0" text="Salario:" textFill="WHITE">
+         <font>
+            <Font name="Minecraft" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="L_nombreAldeano" layoutX="765.0" layoutY="17.0" prefHeight="44.0" prefWidth="190.0" text="Aldeano1" textFill="WHITE">
+         <font>
+            <Font name="Minecraft" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="L_salario" layoutX="806.0" layoutY="53.0" prefHeight="44.0" prefWidth="150.0" text="1000" textFill="WHITE">
+         <font>
+            <Font name="Minecraft" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="44.0" fitWidth="29.0" layoutX="767.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/esmeralda.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="TB_ProductoAldeano" layoutX="352.0" layoutY="173.0" prefHeight="324.0" prefWidth="324.0" visible="false">
+         <columns>
+            <TableColumn fx:id="COL_CategoriaA" prefWidth="197.0" text="Categoria del Producto" />
+            <TableColumn fx:id="COL_PrecioA" minWidth="8.0" prefWidth="126.0" text="Precio" />
+         </columns>
+      </TableView>
+      <Button fx:id="B_CambiarVista" layoutX="697.0" layoutY="104.0" mnemonicParsing="false" onAction="#ON_Cambiar" text="Cambiar Vista de Productos">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_Comprar" layoutX="312.0" layoutY="110.0" mnemonicParsing="false" onAction="#ON_Comprar" text="COMPRAR">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="TB_materiales" layoutX="104.0" layoutY="171.0" onMouseClicked="#ClicMat" prefHeight="324.0" prefWidth="312.0">
+         <columns>
+            <TableColumn fx:id="COL_idMat" prefWidth="53.0" text="Codigo" />
+            <TableColumn fx:id="col_tipo" prefWidth="110.0" text="Tipo de Material" />
+            <TableColumn fx:id="col_categoria" prefWidth="78.0" text="Categoria" />
+            <TableColumn fx:id="col_precio" prefWidth="65.0" text="Precio" />
+         </columns>
+      </TableView>
+      <TableView fx:id="TB_herramientas" layoutX="449.0" layoutY="171.0" onMouseClicked="#ClicHerr" prefHeight="324.0" prefWidth="420.0">
+         <columns>
+            <TableColumn fx:id="COL_idHerr" prefWidth="53.0" text="Codigo" />
+            <TableColumn fx:id="col_tipHerr" prefWidth="123.0" text="Tipo de Herramienta" />
+            <TableColumn fx:id="col_componente" prefWidth="98.0" text="Componente" />
+            <TableColumn fx:id="col_catHerr" prefWidth="75.0" text="Categoria" />
+            <TableColumn fx:id="col_precioHerr" prefWidth="65.0" text="Precio" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
